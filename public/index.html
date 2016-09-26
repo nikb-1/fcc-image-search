@@ -1,0 +1,33 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+
+</head>
+<body>
+
+
+	<div class="container">
+		<div class="text-xs-center">
+			<br/>
+			<h1>Image Search Abstraction Layer API</h1>
+			<br/>
+		</div>
+		<p>This API is a <a href="https://www.freecodecamp.com/" target="_blank">Free Code Camp - Back End Development Certification</a> project.<br/><br/>
+
+		This API can be used for image search requests and makes use of the Bing Search API.<br>
+		Requests can be made by passing a search query to <code>/api/imagesearch/&lt;search_string_goes_here&gt;</code><br/><br/>
+		Results can be paginated through using an offset specifying the page number like so <code>/api/imagesearch/&lt;search_string_goes_here&gt;?offset=&lt;page_number_goes_here&gt;</code><br/><br/>
+		
+		Additionally recent search queries can be viewed at <code>/api/latest/imagesearch</code><br/><br/>
+
+		A JSON object is sent in each response containing either the search results or recent search terms depending on which endpoint was used<br/></p>
+
+		<h3>Example Usage</h3>
+		<p><code>https://image-search-nburazor.herokuapp.com/api/imagesearch/rick sanchez peace among worlds</code></p>
+		<p><code>https://image-search-nburazor.herokuapp.com/api/imagesearch/rick sanchez peace among worlds?offset=3</code></p>
+		<p><code>https://image-search-nburazor.herokuapp.com/api/latest/imagesearch</code></p>
+	</div>
+
+
+</body>
+</html>
